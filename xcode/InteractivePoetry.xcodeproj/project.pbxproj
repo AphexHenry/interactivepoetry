@@ -16,14 +16,40 @@
 		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
 		00B9955A1B128DF400A5C623 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995581B128DF400A5C623 /* IOKit.framework */; };
 		00B9955B1B128DF400A5C623 /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995591B128DF400A5C623 /* IOSurface.framework */; };
+		0B27F07D3247443A8D9FCFB7 /* InteractivePoetryApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50B0AED906F34566BA07B798 /* InteractivePoetryApp.cpp */; };
+		0B3351523D2E42B399F774E9 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = C6246C77B7CB46BB882BE842 /* CinderApp.icns */; };
+		23EE8668DF9A4975BFA168BA /* libfmodex.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0C9FC9F89007466EBEE91854 /* libfmodex.dylib */; };
 		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		23EE8668DF9A4975BFA168BA /* libfmodex.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0C9FC9F89007466EBEE91854 /* libfmodex.dylib */; };
-		0B27F07D3247443A8D9FCFB7 /* InteractivePoetryApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50B0AED906F34566BA07B798 /* InteractivePoetryApp.cpp */; };
-		22B6DD92CFB042BEB2F9D4DA /* InteractivePoetry_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = A2BD69D614B247E2B9EF13AA /* InteractivePoetry_Prefix.pch */; };
-		0B3351523D2E42B399F774E9 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = C6246C77B7CB46BB882BE842 /* CinderApp.icns */; };
-		13CADE5FBBB843E5A2F429B9 /* Resources.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B1C5F172F514FA782C0947F /* Resources.h */; };
+		9C46EA3B1DAA633600F120F4 /* PoemTrack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C46EA391DAA633600F120F4 /* PoemTrack.cpp */; };
+		9C7001A81DB145C900E307EE /* SyphonSender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C7001A61DB145C900E307EE /* SyphonSender.cpp */; };
+		9CD318201DBB72AB006B53CE /* Syphon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD318151DBB72AB006B53CE /* Syphon.framework */; };
+		9CD318211DBB72AB006B53CE /* SyphonNameboundClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CD318171DBB72AB006B53CE /* SyphonNameboundClient.m */; };
+		9CD318221DBB72AB006B53CE /* Client.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9CD3181A1DBB72AB006B53CE /* Client.mm */; };
+		9CD318231DBB72AB006B53CE /* Server.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9CD3181C1DBB72AB006B53CE /* Server.mm */; };
+		9CD318241DBB72AB006B53CE /* ServerDirectory.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9CD3181E1DBB72AB006B53CE /* ServerDirectory.mm */; };
+		9CD3182D1DBB7A07006B53CE /* P1E1.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9CD318251DBB7A07006B53CE /* P1E1.csv */; };
+		9CD3182E1DBB7A07006B53CE /* P1E1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9CD318261DBB7A07006B53CE /* P1E1.wav */; };
+		9CD3182F1DBB7A07006B53CE /* P1E2.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9CD318271DBB7A07006B53CE /* P1E2.csv */; };
+		9CD318301DBB7A07006B53CE /* P1E2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9CD318281DBB7A07006B53CE /* P1E2.wav */; };
+		9CD318311DBB7A07006B53CE /* P1E3.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9CD318291DBB7A07006B53CE /* P1E3.csv */; };
+		9CD318321DBB7A07006B53CE /* P1E3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9CD3182A1DBB7A07006B53CE /* P1E3.wav */; };
+		9CD318331DBB7A07006B53CE /* P1E4.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9CD3182B1DBB7A07006B53CE /* P1E4.csv */; };
+		9CD318341DBB7A07006B53CE /* P1E4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9CD3182C1DBB7A07006B53CE /* P1E4.wav */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0B41E4D7AF56451AB5F2DF86 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				23EE8668DF9A4975BFA168BA /* libfmodex.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		006D720219952D00008149E2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -35,17 +61,39 @@
 		00B784B20FF439BC000DE1D7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		00B995581B128DF400A5C623 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		00B995591B128DF400A5C623 /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = System/Library/Frameworks/IOSurface.framework; sourceTree = SDKROOT; };
+		0C9FC9F89007466EBEE91854 /* libfmodex.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfmodex.dylib; path = ../blocks/FMOD/lib/macosx/libfmodex.dylib; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		1B1C5F172F514FA782C0947F /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = ../include/Resources.h; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		50B0AED906F34566BA07B798 /* InteractivePoetryApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = InteractivePoetryApp.cpp; path = ../src/InteractivePoetryApp.cpp; sourceTree = "<group>"; };
 		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
 		8D1107320486CEB800E47090 /* InteractivePoetry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InteractivePoetry.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B1C5F172F514FA782C0947F /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../include/Resources.h; sourceTree = "<group>"; name = Resources.h; };
-		C6246C77B7CB46BB882BE842 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; name = CinderApp.icns; };
-		C321FD4DC5714949BB78FDEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; name = Info.plist; };
-		A2BD69D614B247E2B9EF13AA /* InteractivePoetry_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = InteractivePoetry_Prefix.pch; sourceTree = "<group>"; name = InteractivePoetry_Prefix.pch; };
-		50B0AED906F34566BA07B798 /* InteractivePoetryApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../src/InteractivePoetryApp.cpp; sourceTree = "<group>"; name = InteractivePoetryApp.cpp; };
-		0C9FC9F89007466EBEE91854 /* libfmodex.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = ../blocks/FMOD/lib/macosx/libfmodex.dylib; sourceTree = "<group>"; name = libfmodex.dylib; };
+		9C46EA391DAA633600F120F4 /* PoemTrack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PoemTrack.cpp; path = ../src/PoemTrack.cpp; sourceTree = "<group>"; };
+		9C46EA3A1DAA633600F120F4 /* PoemTrack.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = PoemTrack.hpp; path = ../src/PoemTrack.hpp; sourceTree = "<group>"; };
+		9C7001A61DB145C900E307EE /* SyphonSender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SyphonSender.cpp; path = ../src/SyphonSender.cpp; sourceTree = "<group>"; };
+		9C7001A71DB145C900E307EE /* SyphonSender.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = SyphonSender.hpp; path = ../src/SyphonSender.hpp; sourceTree = "<group>"; };
+		9CD318151DBB72AB006B53CE /* Syphon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Syphon.framework; sourceTree = "<group>"; };
+		9CD318161DBB72AB006B53CE /* SyphonNameboundClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyphonNameboundClient.h; sourceTree = "<group>"; };
+		9CD318171DBB72AB006B53CE /* SyphonNameboundClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyphonNameboundClient.m; sourceTree = "<group>"; };
+		9CD318191DBB72AB006B53CE /* Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
+		9CD3181A1DBB72AB006B53CE /* Client.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Client.mm; sourceTree = "<group>"; };
+		9CD3181B1DBB72AB006B53CE /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
+		9CD3181C1DBB72AB006B53CE /* Server.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Server.mm; sourceTree = "<group>"; };
+		9CD3181D1DBB72AB006B53CE /* ServerDirectory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerDirectory.h; sourceTree = "<group>"; };
+		9CD3181E1DBB72AB006B53CE /* ServerDirectory.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ServerDirectory.mm; sourceTree = "<group>"; };
+		9CD3181F1DBB72AB006B53CE /* Syphon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Syphon.h; sourceTree = "<group>"; };
+		9CD318251DBB7A07006B53CE /* P1E1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = P1E1.csv; path = ../assets/P1E1.csv; sourceTree = "<group>"; };
+		9CD318261DBB7A07006B53CE /* P1E1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = P1E1.wav; path = ../assets/P1E1.wav; sourceTree = "<group>"; };
+		9CD318271DBB7A07006B53CE /* P1E2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = P1E2.csv; path = ../assets/P1E2.csv; sourceTree = "<group>"; };
+		9CD318281DBB7A07006B53CE /* P1E2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = P1E2.wav; path = ../assets/P1E2.wav; sourceTree = "<group>"; };
+		9CD318291DBB7A07006B53CE /* P1E3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = P1E3.csv; path = ../assets/P1E3.csv; sourceTree = "<group>"; };
+		9CD3182A1DBB7A07006B53CE /* P1E3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = P1E3.wav; path = ../assets/P1E3.wav; sourceTree = "<group>"; };
+		9CD3182B1DBB7A07006B53CE /* P1E4.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = P1E4.csv; path = ../assets/P1E4.csv; sourceTree = "<group>"; };
+		9CD3182C1DBB7A07006B53CE /* P1E4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = P1E4.wav; path = ../assets/P1E4.wav; sourceTree = "<group>"; };
+		A2BD69D614B247E2B9EF13AA /* InteractivePoetry_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = InteractivePoetry_Prefix.pch; sourceTree = "<group>"; };
+		C321FD4DC5714949BB78FDEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6246C77B7CB46BB882BE842 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CinderApp.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +102,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				006D720419952D00008149E2 /* AVFoundation.framework in Frameworks */,
+				9CD318201DBB72AB006B53CE /* Syphon.framework in Frameworks */,
 				006D720519952D00008149E2 /* CoreMedia.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */,
@@ -70,10 +119,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01B97315FEAEA392516A2CEA /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				9CD317F71DBB71EE006B53CE /* Syphon */,
+				F36CFD79C4C943FB82A077B0 /* FMOD */,
+			);
+			name = Blocks;
+			sourceTree = "<group>";
+		};
+		06F03BDB59CE487D9999C3D7 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				9AB180BBE07F4B5ABDCF4476 /* macosx */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
 		080E96DDFE201D6D7F000001 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				50B0AED906F34566BA07B798 /* InteractivePoetryApp.cpp */,
+				9C46EA391DAA633600F120F4 /* PoemTrack.cpp */,
+				9C46EA3A1DAA633600F120F4 /* PoemTrack.hpp */,
+				9C7001A61DB145C900E307EE /* SyphonSender.cpp */,
+				9C7001A71DB145C900E307EE /* SyphonSender.hpp */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -126,38 +196,6 @@
 			name = InteractivePoetry;
 			sourceTree = "<group>";
 		};
-		9AB180BBE07F4B5ABDCF4476 /* macosx */ = {
-			isa = PBXGroup;
-			children = (
-				0C9FC9F89007466EBEE91854 /* libfmodex.dylib */,
-			);
-			name = macosx;
-			sourceTree = "<group>";
-		};
-		06F03BDB59CE487D9999C3D7 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				9AB180BBE07F4B5ABDCF4476 /* macosx */,
-			);
-			name = lib;
-			sourceTree = "<group>";
-		};
-		F36CFD79C4C943FB82A077B0 /* FMOD */ = {
-			isa = PBXGroup;
-			children = (
-				06F03BDB59CE487D9999C3D7 /* lib */,
-			);
-			name = FMOD;
-			sourceTree = "<group>";
-		};
-		01B97315FEAEA392516A2CEA /* Blocks */ = {
-			isa = PBXGroup;
-			children = (
-				F36CFD79C4C943FB82A077B0 /* FMOD */,
-			);
-			name = Blocks;
-			sourceTree = "<group>";
-		};
 		29B97315FDCFA39411CA2CEA /* Headers */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +208,14 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9CD318251DBB7A07006B53CE /* P1E1.csv */,
+				9CD318261DBB7A07006B53CE /* P1E1.wav */,
+				9CD318271DBB7A07006B53CE /* P1E2.csv */,
+				9CD318281DBB7A07006B53CE /* P1E2.wav */,
+				9CD318291DBB7A07006B53CE /* P1E3.csv */,
+				9CD3182A1DBB7A07006B53CE /* P1E3.wav */,
+				9CD3182B1DBB7A07006B53CE /* P1E4.csv */,
+				9CD3182C1DBB7A07006B53CE /* P1E4.wav */,
 				C6246C77B7CB46BB882BE842 /* CinderApp.icns */,
 				C321FD4DC5714949BB78FDEA /* Info.plist */,
 			);
@@ -183,6 +229,66 @@
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9AB180BBE07F4B5ABDCF4476 /* macosx */ = {
+			isa = PBXGroup;
+			children = (
+				0C9FC9F89007466EBEE91854 /* libfmodex.dylib */,
+			);
+			name = macosx;
+			sourceTree = "<group>";
+		};
+		9CD317F71DBB71EE006B53CE /* Syphon */ = {
+			isa = PBXGroup;
+			children = (
+				9CD318131DBB7281006B53CE /* Syphon */,
+			);
+			name = Syphon;
+			path = "../../../blocks/Cinder-Syphon";
+			sourceTree = "<group>";
+		};
+		9CD318131DBB7281006B53CE /* Syphon */ = {
+			isa = PBXGroup;
+			children = (
+				9CD318141DBB72AB006B53CE /* lib */,
+				9CD318181DBB72AB006B53CE /* src */,
+			);
+			name = Syphon;
+			sourceTree = "<group>";
+		};
+		9CD318141DBB72AB006B53CE /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				9CD318151DBB72AB006B53CE /* Syphon.framework */,
+				9CD318161DBB72AB006B53CE /* SyphonNameboundClient.h */,
+				9CD318171DBB72AB006B53CE /* SyphonNameboundClient.m */,
+			);
+			name = lib;
+			path = ../../MyApps/InteractivePoetry/blocks/Syphon/lib;
+			sourceTree = "<group>";
+		};
+		9CD318181DBB72AB006B53CE /* src */ = {
+			isa = PBXGroup;
+			children = (
+				9CD318191DBB72AB006B53CE /* Client.h */,
+				9CD3181A1DBB72AB006B53CE /* Client.mm */,
+				9CD3181B1DBB72AB006B53CE /* Server.h */,
+				9CD3181C1DBB72AB006B53CE /* Server.mm */,
+				9CD3181D1DBB72AB006B53CE /* ServerDirectory.h */,
+				9CD3181E1DBB72AB006B53CE /* ServerDirectory.mm */,
+				9CD3181F1DBB72AB006B53CE /* Syphon.h */,
+			);
+			name = src;
+			path = ../../MyApps/InteractivePoetry/blocks/Syphon/src;
+			sourceTree = "<group>";
+		};
+		F36CFD79C4C943FB82A077B0 /* FMOD */ = {
+			isa = PBXGroup;
+			children = (
+				06F03BDB59CE487D9999C3D7 /* lib */,
+			);
+			name = FMOD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +318,8 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "InteractivePoetry" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -236,7 +344,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CD318321DBB7A07006B53CE /* P1E3.wav in Resources */,
 				0B3351523D2E42B399F774E9 /* CinderApp.icns in Resources */,
+				9CD318301DBB7A07006B53CE /* P1E2.wav in Resources */,
+				9CD3182E1DBB7A07006B53CE /* P1E1.wav in Resources */,
+				9CD318341DBB7A07006B53CE /* P1E4.wav in Resources */,
+				9CD318331DBB7A07006B53CE /* P1E4.csv in Resources */,
+				9CD318311DBB7A07006B53CE /* P1E3.csv in Resources */,
+				9CD3182F1DBB7A07006B53CE /* P1E2.csv in Resources */,
+				9CD3182D1DBB7A07006B53CE /* P1E1.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,7 +363,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CD318241DBB72AB006B53CE /* ServerDirectory.mm in Sources */,
+				9C46EA3B1DAA633600F120F4 /* PoemTrack.cpp in Sources */,
+				9C7001A81DB145C900E307EE /* SyphonSender.cpp in Sources */,
+				9CD318231DBB72AB006B53CE /* Server.mm in Sources */,
+				9CD318221DBB72AB006B53CE /* Client.mm in Sources */,
 				0B27F07D3247443A8D9FCFB7 /* InteractivePoetryApp.cpp in Sources */,
+				9CD318211DBB72AB006B53CE /* SyphonNameboundClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,17 +380,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				DEAD_CODE_STRIPPING = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = ../blocks/Syphon/lib;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = InteractivePoetry_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = InteractivePoetry_Prefix.pch;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
@@ -289,16 +412,17 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = ../blocks/Syphon/lib;
 				GCC_FAST_MATH = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = InteractivePoetry_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"NDEBUG=1",
 					"$(inherited)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = InteractivePoetry_Prefix.pch;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
@@ -318,7 +442,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CINDER_PATH = "../../..";
+				CINDER_PATH = ../../..;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
 				CLANG_CXX_LIBRARY = "libc++";
 				ENABLE_TESTABILITY = YES;
@@ -328,10 +452,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = (
-					"\"$(CINDER_PATH)/include\" ../include",
-					../blocks/FMOD/include,
-				);
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include ../blocks/FMOD/include";
 			};
 			name = Debug;
 		};
@@ -339,7 +460,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CINDER_PATH = "../../..";
+				CINDER_PATH = ../../..;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
 				CLANG_CXX_LIBRARY = "libc++";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -347,10 +468,7 @@
 				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = (
-					"\"$(CINDER_PATH)/include\" ../include",
-					../blocks/FMOD/include,
-				);
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include ../blocks/FMOD/include";
 			};
 			name = Release;
 		};
@@ -376,16 +494,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-		0B41E4D7AF56451AB5F2DF86 /* Copy Files */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 6;
-			files = (
-				23EE8668DF9A4975BFA168BA /* libfmodex.dylib in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 	};
 	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
 }

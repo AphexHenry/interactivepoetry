@@ -4,6 +4,8 @@
 
 #include "FMOD.hpp"
 
+#include "PoemTrack.hpp"
+
 using namespace ci;
 using namespace ci::app;
 using namespace std;
@@ -12,21 +14,65 @@ class InteractivePoetryApp : public App {
   public:
 	void setup() override;
 	void draw() override;
+    void update() override;
+    
+private:
+    void updateIntensity();
 
 	FMOD::System	*mSystem;
-    FMOD::Sound    	*mSound;
-	FMOD::Channel	*mChannel;
+    
+    vector< vector< PoemTrack * > > mPoems;
+    PoemTrack * mTrackPlaying;
+    
+    int mCurrentPoem;
+    int mCurrentIntensity;
+    int mCurrentLine;
 };
 
 void InteractivePoetryApp::setup()
 {
     FMOD::System_Create( &mSystem );
     mSystem->init( 32, FMOD_INIT_NORMAL | FMOD_INIT_ENABLE_PROFILE, NULL );
+    
+    mTrackPlaying = nullptr;
+    
+    mCurrentPoem = 0;
+    mCurrentIntensity = 0;
+    mCurrentLine = 0;
+    
+    int lPoemCount = 1;
+    int lIntensityCount = 4;
+    for(int p = 0; p < lPoemCount; p++)
+    {
+        mPoems.push_back(vector< PoemTrack * >());
+        for(int i = 0; i < lIntensityCount; i++)
+        {
+            mPoems[mPoems.size() - 1].push_back(new PoemTrack(mPoems.size(), i + 1, mSystem));
+        }
+    }
+}
 
-    mSystem->createSound( getAssetPath( "Blank__Kytt_-_08_-_RSPN.mp3" ).string().c_str(), FMOD_SOFTWARE, NULL, &mSound );
-	mSound->setMode( FMOD_LOOP_NORMAL );
+void InteractivePoetryApp::update()
+{
+    if(!mTrackPlaying)
+    {
+        mTrackPlaying = mPoems[mCurrentPoem][mCurrentIntensity];
+        mTrackPlaying->play();
+    }
+    if(mTrackPlaying->isFinished())
+    {
+        mCurrentLine++;
+        updateIntensity();
+        mTrackPlaying->setPositionIndex(mCurrentLine);
+    }
+}
 
-	mSystem->playSound( FMOD_CHANNEL_FREE, mSound, false, &mChannel );
+void InteractivePoetryApp::updateIntensity()
+{
+    int lNewIndex = mCurrentLine % 2;
+    mTrackPlaying->pause();
+    mTrackPlaying = mPoems[mCurrentPoem][lNewIndex];
+    mTrackPlaying->play();
 }
 
 void InteractivePoetryApp::draw()
